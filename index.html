@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        src="images/Fall - 23881.mp4"
+        autoplay
+        loop
+        playsinline
+        muted
+      ></video>
+
+      <!-- <video autoplay="true" class="box1" id="box1" src="images/Robin - 21723.mp4"></video> 
+		<video class="box2" id="box2" src="images/Fall - 23881.mp4"></video> 
+		<video class="box3" id="box3" src="images/Robin - 21723.mp4"></video> -->
+      <!-- <video id="video1" class="video" autoplay muted >
+            <source src="images/2018_01_7__29_.mov" type="video/mp4">
+        </video>
+        
+        <video id="video2" class="video" muted>
+            <source src="images/Fall - 23881.mp4" type="video/mp4">
+        </video>
+        
+        <video id="video3" class="video" muted>
+            <source src="images/Robin - 21723.mp4" type="video/mp4">
+        </video> -->
+
+      <!-------text animation part----------->
+
+      <!-- <div id="text-animate">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+         -->
+
+      <div class="inner">
+        <div class="box-container">
+          <div class="header">
+            <div class="correct" id="correct">correct</div>
+            <div class="wrong" id="wrong">wrong</div>
+            <div class="score" id="score">
+              Score: <span id="scorevalue">0</span>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="col1" id="question"></div>
+            <div class="col1" id="click">Click on the Correct Answer</div>
+            <div class="col1" id="boxes">
+              <div id="box1" class="box"></div>
+              <div id="box2" class="box"></div>
+              <div id="box3" class="box"></div>
+              <div id="box4" class="box"></div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="startreset" id="startreset">Start game</div>
+            <div class="time" id="timeremaining">
+              Time Remaining: <span id="timeremainingvalue">60</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------text animation-->
+      <section>
+        <div class="content" style="min-height: 50px;">
+          <h2>@Sowmiya</h2>
+          <h2>@Sowmiya</h2>
+        </div>
+      </section>
+
+      <div class="gameOver" id="gameOver">
+        <div>
+          <p>
+            game over<br />
+            your score is:<span id="correctanswers"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
